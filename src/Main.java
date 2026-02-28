@@ -39,6 +39,10 @@ public class Main {
                 .send(request , HttpResponse.BodyHandlers.ofString());
 
 
+        // Exibir a resposta da request :
+        System.out.println(response.body());
+
+
     }
 
 

@@ -21,6 +21,8 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
 
 
+        // Recado de Boas vindas ao sistema :
+        System.out.println("Seja bem-vindo ao sistema de busca de filmes!" + "\n");
 
 
 

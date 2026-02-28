@@ -36,8 +36,11 @@ public class MovieConsultation {
     // Metodos
 
     // Executa uma busca ne filme de um web service :
-    public void movieConsultation () throws IOException, InterruptedException {
+    public void movieConsultation (String path) throws IOException, InterruptedException {
 
+
+        // Armazenando parametro no atributos :
+        setPath(path);
 
         // Configurações dos atributos de API :
 

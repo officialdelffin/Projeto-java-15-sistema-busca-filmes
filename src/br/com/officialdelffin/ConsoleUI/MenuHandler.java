@@ -45,6 +45,10 @@ public class MenuHandler {
         this.name = nameP;
 
 
+        // Criando rota :
+        path = "https://www.omdbapi.com/?t=" + name + "&apikey=49ebfa25";
+
+
     }
 
 

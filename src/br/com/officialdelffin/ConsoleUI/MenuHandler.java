@@ -5,7 +5,6 @@ package br.com.officialdelffin.ConsoleUI;
 
 // Importações :
 import br.com.officialdelffin.ConsumptionAPI.MovieConsultation;
-
 import java.io.IOException;
 import java.util.Scanner;
 

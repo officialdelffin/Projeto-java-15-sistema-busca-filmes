@@ -4,6 +4,9 @@ package br.com.officialdelffin.ConsoleUI;
 
 
 // Importações :
+import br.com.officialdelffin.ConsumptionAPI.MovieConsultation;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 
@@ -18,12 +21,13 @@ public class MenuHandler {
 
 
     // Faz a inteção do usuário dentro do sistema :
-    public void interactWithUser () {
+    public void interactWithUser () throws IOException, InterruptedException {
 
 
         // Intancias :
 
         var inputUser = new Scanner(System.in);
+        var querySystem = new MovieConsultation();
 
 
         // Recebe e armazena qual filme o usuário quer :
@@ -31,7 +35,12 @@ public class MenuHandler {
         name = inputUser.nextLine();
 
 
+        // Chamando o métodp que cria uma rota :
+        definingRote(name);
 
+
+        // Chamando sistema de consulta de filmes para buscar na API :
+        querySystem.movieConsultation(path);
 
 
     }

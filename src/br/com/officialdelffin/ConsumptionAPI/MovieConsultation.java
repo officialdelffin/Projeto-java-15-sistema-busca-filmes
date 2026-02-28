@@ -20,27 +20,15 @@ public class MovieConsultation {
     private String path ;
 
 
-    // Metodos Getters e Setters :
-
-    // Setters :
-
-    public void setPath(String path) {
-
-
-        this.path = path;
-
-
-    }
-
-
     // Metodos
 
     // Executa uma busca ne filme de um web service :
-    public void movieConsultation (String path) throws IOException, InterruptedException {
+    public void movieConsultation (String pathP) throws IOException, InterruptedException {
 
 
         // Armazenando parametro no atributos :
-        setPath(path);
+        this.path = pathP;
+
 
         // Configurações dos atributos de API :
 

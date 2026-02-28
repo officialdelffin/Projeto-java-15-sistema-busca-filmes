@@ -17,9 +17,20 @@ public class MovieConsultation {
 
     // Atributos :
 
-    String path ;
+    private String path ;
 
 
+    // Metodos Getters e Setters :
+
+    // Setters :
+
+    public void setPath(String path) {
+
+
+        this.path = path;
+
+
+    }
 
 
     // Metodos
@@ -51,6 +62,9 @@ public class MovieConsultation {
 
         // Exibindo o resultado da busca :
         System.out.println(response.body());
+
+
     }
+
 
 }

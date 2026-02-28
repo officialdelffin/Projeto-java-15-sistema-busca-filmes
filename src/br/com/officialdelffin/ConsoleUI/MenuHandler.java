@@ -28,6 +28,21 @@ public class MenuHandler {
 
         // Recebe e armazena qual filme o usuário quer :
         System.out.println("Digite o nome do filme que você deseja consultar :");
+        name = inputUser.nextLine();
+
+
+
+
+
+    }
+
+
+    // Cria a rota para o metodo movieConsultion buscar os dados :
+    public void definingRote (String nameP) {
+
+
+        // Armazenando os paramentros para os atributos :
+        this.name = nameP;
 
 
     }

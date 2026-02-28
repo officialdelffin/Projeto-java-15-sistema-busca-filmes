@@ -31,7 +31,7 @@ public class MenuHandler {
 
 
         // Recebe e armazena qual filme o usuário quer :
-        System.out.println("Digite o nome do filme que você deseja consultar :");
+        System.out.println("Digite o nome do filme que você deseja consultar :" + "\n");
         name = inputUser.nextLine();
 
 

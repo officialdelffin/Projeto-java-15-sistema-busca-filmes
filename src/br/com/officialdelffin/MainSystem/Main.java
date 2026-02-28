@@ -10,6 +10,8 @@ package br.com.officialdelffin.MainSystem;
 
 
 // Importações :
+import br.com.officialdelffin.ConsoleUI.MenuHandler;
+
 import java.io.IOException;
 
 
@@ -21,9 +23,17 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
 
 
+        // Intancias :
+
+        var menuHandler = new MenuHandler();
+
+
         // Recado de Boas vindas ao sistema :
         System.out.println("Seja bem-vindo ao sistema de busca de filmes!" + "\n");
 
+
+        // Chamando e iniciando o sistema :
+        menuHandler.interactWithUser();
 
 
 

@@ -52,7 +52,7 @@ public class MovieConsultation {
 
 
         // Exibindo o resultado da busca :
-        System.out.println(response.body());
+        System.out.println("\n" + response.body());
 
 
     }

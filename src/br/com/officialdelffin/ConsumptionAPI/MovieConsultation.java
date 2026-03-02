@@ -4,6 +4,9 @@ package br.com.officialdelffin.ConsumptionAPI;
 
 
 // Importações :
+import br.com.officialdelffin.Movies.Movies;
+import com.google.gson.Gson;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -18,6 +21,13 @@ public class MovieConsultation {
     // Atributos :
 
     private String path ;
+    private String response;
+
+
+    // Instancias :
+
+    Gson converterJsonObject = new Gson();
+    Movies movie = new Movies();
 
 
     // Metodos
@@ -44,15 +54,16 @@ public class MovieConsultation {
 
 
         // Armazenando a busca do Agent
-        HttpResponse<String> response = client
+        HttpResponse<String> responseJson = client
 
 
                 // Fazendo a request e passando a response para String :
                 .send(request , HttpResponse.BodyHandlers.ofString());
 
 
-        // Exibindo o resultado da busca :
-        System.out.println("\n" + response.body());
+        // Armazenando o response com o body em uma variavel :
+        response = responseJson.body();
+
 
 
     }

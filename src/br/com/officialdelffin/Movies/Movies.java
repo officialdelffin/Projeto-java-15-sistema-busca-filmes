@@ -18,8 +18,41 @@ public class Movies {
     private String writer;
     private String plot;
 
+    private String textFormatting;
+
 
     // Métodos :
+
+    // Sobreescrevendo metodo toString :
+    @Override
+    public String toString() {
+
+
+        textFormatting = """
+                
+                Nome : %s
+                
+                Ano de Lançamento : %s
+                
+                Lançamento : %s
+                
+                Tempo de filme : %s
+                
+                Gênero : %s
+                
+                Diretor : %s
+                
+                Escritor : %s
+                
+                Trama : %s
+                
+                """ ;
+
+
+        return textFormatting;
+
+
+    }
 
 
 }

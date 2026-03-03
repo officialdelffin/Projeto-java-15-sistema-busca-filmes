@@ -4,7 +4,6 @@ package br.com.officialdelffin.Movies;
 
 
 // Importações :
-
 import com.google.gson.annotations.SerializedName;
 
 

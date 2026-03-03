@@ -4,10 +4,8 @@ package br.com.officialdelffin.ConsumptionAPI;
 
 
 // Importações :
-
 import br.com.officialdelffin.Movies.Movies;
 import com.google.gson.Gson;
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;

@@ -65,6 +65,10 @@ public class MovieConsultation {
         response = responseJson.body();
 
 
+        // O movie vai chamar o converter e atribuir o response aos atributos de Movies
+        movie = converterJsonObject.fromJson(response , Movies.class);
+
+
 
     }
 

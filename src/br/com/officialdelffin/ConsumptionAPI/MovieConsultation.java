@@ -4,6 +4,7 @@ package br.com.officialdelffin.ConsumptionAPI;
 
 
 // Importações :
+
 import br.com.officialdelffin.Movies.Movies;
 import com.google.gson.Gson;
 
@@ -20,7 +21,7 @@ public class MovieConsultation {
 
     // Atributos :
 
-    private String path ;
+    private String path;
     private String response;
 
 
@@ -33,7 +34,7 @@ public class MovieConsultation {
     // Metodos
 
     // Executa uma busca ne filme de um web service :
-    public void movieConsultation (String pathP) throws IOException, InterruptedException {
+    public void movieConsultation(String pathP) throws IOException, InterruptedException {
 
 
         // Armazenando parametro no atributos :
@@ -58,7 +59,7 @@ public class MovieConsultation {
 
 
                 // Fazendo a request e passando a response para String :
-                .send(request , HttpResponse.BodyHandlers.ofString());
+                .send(request, HttpResponse.BodyHandlers.ofString());
 
 
         // Armazenando o response com o body em uma variavel :
@@ -66,7 +67,7 @@ public class MovieConsultation {
 
 
         // O movie vai chamar o converter e atribuir o response aos atributos de Movies
-        movie = converterJsonObject.fromJson(response , Movies.class);
+        movie = converterJsonObject.fromJson(response, Movies.class);
 
 
         // Exibindo o objeto filme para o usuário :

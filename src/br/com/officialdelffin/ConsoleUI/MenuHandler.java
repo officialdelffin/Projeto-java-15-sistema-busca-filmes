@@ -4,7 +4,9 @@ package br.com.officialdelffin.ConsoleUI;
 
 
 // Importações :
+
 import br.com.officialdelffin.ConsumptionAPI.MovieConsultation;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -20,7 +22,7 @@ public class MenuHandler {
 
 
     // Faz a inteção do usuário dentro do sistema :
-    public void interactWithUser () throws IOException, InterruptedException {
+    public void interactWithUser() throws IOException, InterruptedException {
 
 
         // Intancias :
@@ -46,7 +48,7 @@ public class MenuHandler {
 
 
     // Cria a rota para o metodo movieConsultion buscar os dados :
-    public void definingRote (String nameP) {
+    public void definingRote(String nameP) {
 
 
         // Armazenando os paramentros para os atributos :

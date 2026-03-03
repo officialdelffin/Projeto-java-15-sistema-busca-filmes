@@ -3,7 +3,10 @@
 package br.com.officialdelffin.Movies;
 
 
+// Importações :
+
 import com.google.gson.annotations.SerializedName;
+
 
 // Classe resposável por criar objetos de filmes :
 public class Movies {
@@ -69,10 +72,10 @@ public class Movies {
                 
                 Trama : %s
                 
-                """ ;
+                """;
 
         // Armazenando a formatação do texto em uma variavel :
-        textFormattiongFinal = String.format(textFormatting, title, year, released, runtime, genre, director, writer , plot);
+        textFormattiongFinal = String.format(textFormatting, title, year, released, runtime, genre, director, writer, plot);
 
 
         // Retornando o texto formatado :

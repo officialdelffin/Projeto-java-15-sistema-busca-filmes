@@ -64,8 +64,6 @@ public class MovieConsultation {
         // Armazenando o response com o body em uma variavel :
         response = responseJson.body();
 
-        System.out.println(response);
-
 
         // O movie vai chamar o converter e atribuir o response aos atributos de Movies
         movie = converterJsonObject.fromJson(response , Movies.class);

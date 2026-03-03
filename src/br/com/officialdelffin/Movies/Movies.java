@@ -16,25 +16,25 @@ public class Movies {
     @SerializedName("Title")
     private String title;
 
-    @SerializedName("")
+    @SerializedName("Year")
     private String year;
 
-    @SerializedName("")
+    @SerializedName("Released")
     private String released;
 
-    @SerializedName("")
+    @SerializedName("Runtime")
     private String runtime;
 
-    @SerializedName("")
+    @SerializedName("Genre")
     private String genre;
 
-    @SerializedName("")
+    @SerializedName("Director")
     private String director;
 
-    @SerializedName("")
+    @SerializedName("Writer")
     private String writer;
 
-    @SerializedName("")
+    @SerializedName("Plot")
     private String plot;
 
 
@@ -50,6 +50,7 @@ public class Movies {
     public String toString() {
 
 
+        // Definindo a formatação do texto :
         textFormatting = """
                 
                 Nome : %s
@@ -70,9 +71,11 @@ public class Movies {
                 
                 """ ;
 
+        // Armazenando a formatação do texto em uma variavel :
         textFormattiongFinal = String.format(textFormatting, title, year, released, runtime, genre, director, writer , plot);
 
 
+        // Retornando o texto formatado :
         return textFormattiongFinal;
 
 

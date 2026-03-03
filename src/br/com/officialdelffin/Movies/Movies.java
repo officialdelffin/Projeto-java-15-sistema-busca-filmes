@@ -19,6 +19,7 @@ public class Movies {
     private String plot;
 
     private String textFormatting;
+    private String textFormattiongFinal;
 
 
     // Métodos :
@@ -48,8 +49,10 @@ public class Movies {
                 
                 """ ;
 
+        textFormattiongFinal = String.format(textFormatting, title, year, released, runtime, genre, director, writer , plot);
 
-        return textFormatting;
+
+        return textFormattiongFinal;
 
 
     }

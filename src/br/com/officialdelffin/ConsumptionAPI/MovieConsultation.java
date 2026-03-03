@@ -69,6 +69,10 @@ public class MovieConsultation {
         movie = converterJsonObject.fromJson(response , Movies.class);
 
 
+        // Exibindo o objeto filme para o usuário :
+        System.out.println(movie);
+
+
     }
 
 

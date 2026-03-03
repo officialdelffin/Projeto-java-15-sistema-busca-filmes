@@ -69,7 +69,6 @@ public class MovieConsultation {
         movie = converterJsonObject.fromJson(response , Movies.class);
 
 
-
     }
 
 

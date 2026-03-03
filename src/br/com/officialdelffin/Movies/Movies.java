@@ -3,21 +3,42 @@
 package br.com.officialdelffin.Movies;
 
 
+import com.google.gson.annotations.SerializedName;
+
 // Classe resposável por criar objetos de filmes :
 public class Movies {
 
 
     // Atributos :
 
+    // Atributos de filmes :]
+
+    @SerializedName("Title")
     private String title;
+
+    @SerializedName("")
     private String year;
+
+    @SerializedName("")
     private String released;
+
+    @SerializedName("")
     private String runtime;
+
+    @SerializedName("")
     private String genre;
+
+    @SerializedName("")
     private String director;
+
+    @SerializedName("")
     private String writer;
+
+    @SerializedName("")
     private String plot;
 
+
+    // Atributo para formatação de texto :
     private String textFormatting;
     private String textFormattiongFinal;
 

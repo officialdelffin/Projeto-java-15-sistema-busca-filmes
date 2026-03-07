@@ -69,8 +69,12 @@ public class MovieConsultation {
                 .create();
 
 
-        // O movie vai chamar o converter e atribuir o response aos atributos de Movies
-        MovieOmdb movie = converterJsonObject.fromJson(response, MovieOmdb.class);
+        // O movieData para que ele receba e aramazente todos os atributos e vinculos que vem da API :
+        MovieOmdb movieData = converterJsonObject.fromJson(response, MovieOmdb.class);
+
+
+        // Criando um Movie com os dados forncidos e vinculados que veio da API atraves do MovieData :
+        Movies movie = new Movies();
 
 
         // Exibindo o objeto filme para o usuário :

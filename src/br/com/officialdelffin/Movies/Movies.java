@@ -11,32 +11,27 @@ import com.google.gson.annotations.SerializedName;
 public class Movies {
 
 
+    // Construtores :
+    public Movies (String titleP, String yearP, String releasedP , String runtimeP, String genreP, String directorP, String writerP, String plotP) {
+
+
+
+
+
+    }
+
+
     // Atributos :
 
     // Atributos de filmes :]
 
-    @SerializedName("Title")
     private String title;
-
-    @SerializedName("Year")
     private String year;
-
-    @SerializedName("Released")
     private String released;
-
-    @SerializedName("Runtime")
     private String runtime;
-
-    @SerializedName("Genre")
     private String genre;
-
-    @SerializedName("Director")
     private String director;
-
-    @SerializedName("Writer")
     private String writer;
-
-    @SerializedName("Plot")
     private String plot;
 
 

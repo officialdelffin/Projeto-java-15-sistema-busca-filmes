@@ -74,7 +74,7 @@ public class MovieConsultation {
 
 
         // Criando um Movie com os dados forncidos e vinculados que veio da API atraves do MovieData :
-        Movies movie = new Movies();
+        Movies movie = new Movies(movieData.title(), movieData.year(), movieData.released(), movieData.runtime(), movieData.genre(), movieData.director(), movieData.writer(), movieData.plot());
 
 
         // Exibindo o objeto filme para o usuário :

@@ -15,7 +15,14 @@ public class Movies {
     public Movies (String titleP, String yearP, String releasedP , String runtimeP, String genreP, String directorP, String writerP, String plotP) {
 
 
-
+        this.title = titleP;
+        this.year = yearP;
+        this.released = releasedP;
+        this.runtime = runtimeP;
+        this.genre = genreP;
+        this.director = directorP;
+        this.writer = writerP;
+        this.plot = plotP;
 
 
     }

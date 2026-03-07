@@ -4,6 +4,7 @@ package br.com.officialdelffin.ConsumptionAPI;
 
 
 // Importações :
+import br.com.officialdelffin.Movies.MovieOmdb;
 import br.com.officialdelffin.Movies.Movies;
 import com.google.gson.Gson;
 import java.io.IOException;
@@ -26,7 +27,6 @@ public class MovieConsultation {
     // Instancias :
 
     Gson converterJsonObject = new Gson();
-    Movies movie = new Movies();
 
 
     // Metodos
@@ -65,7 +65,7 @@ public class MovieConsultation {
 
 
         // O movie vai chamar o converter e atribuir o response aos atributos de Movies
-        movie = converterJsonObject.fromJson(response, Movies.class);
+        MovieOmdb movie = converterJsonObject.fromJson(response, MovieOmdb.class);
 
 
         // Exibindo o objeto filme para o usuário :

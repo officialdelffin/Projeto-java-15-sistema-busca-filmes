@@ -6,7 +6,10 @@ package br.com.officialdelffin.ConsumptionAPI;
 // Importações :
 import br.com.officialdelffin.Movies.MovieOmdb;
 import br.com.officialdelffin.Movies.Movies;
+import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -22,11 +25,6 @@ public class MovieConsultation {
 
     private String path;
     private String response;
-
-
-    // Instancias :
-
-    Gson converterJsonObject = new Gson();
 
 
     // Metodos
@@ -62,6 +60,13 @@ public class MovieConsultation {
 
         // Armazenando o response com o body em uma variavel :
         response = responseJson.body();
+
+
+        // Instancias do Gson e configurando para tudo que vir da API vai ser tudo minusculo, para bater com os names do atributos do MovieOmdb :
+        Gson converterJsonObject = new GsonBuilder()
+
+                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+                .create();
 
 
         // O movie vai chamar o converter e atribuir o response aos atributos de Movies
